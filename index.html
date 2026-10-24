@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Nathasya Berliana Putri</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lilac: {
+              50: '#FAF5FF',
+              100: '#F3E8FF',
+              200: '#E9D5FF',
+              300: '#D8B4FE',
+              400: '#C084FC',
+              500: '#A855F7',
+              600: '#9333EA',
+              700: '#7E22CE',
+              800: '#6B21A8',
+              900: '#581C87',
+            },
+            pastel: {
+              bg: '#F6F2FC',
+              card: '#FFFFFF',
+              border: '#E8DEF8',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #F7F3FD;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(216, 180, 254, 0.28) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(192, 132, 252, 0.2) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(243, 232, 255, 0.6) 0px, transparent 50%);
+      background-attachment: fixed;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(233, 213, 255, 0.8);
+      box-shadow: 0 10px 30px -5px rgba(168, 85, 247, 0.07);
+    }
+    .badge-pill {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .badge-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(168, 85, 247, 0.18);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased selection:bg-lilac-200 selection:text-lilac-900 min-h-screen">
+
+  <!-- Container Utama -->
+  <main class="max-w-4xl mx-auto px-5 py-8 md:py-12 space-y-10">
+
+    <!-- Hero / Header Section -->
+    <header class="glass-card rounded-3xl p-7 md:p-10 relative overflow-hidden">
+      <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-lilac-200/40 rounded-full blur-2xl pointer-events-none"></div>
+      <h1 class="font-serif text-4xl sm:text-5xl font-bold text-lilac-900 tracking-tight mb-2">
+        Hellow 🪻
+      </h1>
+      <p class="text-lilac-700 font-medium text-base sm:text-lg mb-4 flex items-center gap-2">
+        "Let me know about me"
+      </p>
+      <div class="p-5 sm:p-6 bg-lilac-50/70 border border-lilac-200/60 rounded-2xl">
+        <p class="text-base sm:text-lg text-gray-700 leading-relaxed font-light">
+          <span class="font-medium text-gray-900">Saya Nathasya Berliana Putri merupakan mahasiswa Universitas Gadjah Mada dengan program studi Teknologi Rekayasa Elektro (TRE) angkatan 2026 yang berasal dari Banyumas, Jawa Tengah. Saya memiliki ketertarikan untuk mempelajari hal-hal baru. Saya juga senantiasa berupaya mengembangkan diri dan mengasah keterampilan melalui berbagai kesempatan, pengalaman, serta kegiatan yang dapat mendukung pertumbuhan akademik maupun non akademik.</span>
+        </p>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="glass-card rounded-3xl p-7 md:p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-shapes"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900">Skills</h2>
+          <p class="text-xs text-gray-500">Keahlian teknis & soft skills</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-3">
+        <!-- MS Word -->
+        <span class="badge-pill inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white text-gray-800 text-sm font-medium border border-slate-200 shadow-sm hover:border-slate-300">
+          <i class="fa-solid fa-file-word text-blue-600 text-base"></i>
+          <span>MS Word</span>
+        </span>
+        <!-- MS Excel -->
+        <span class="badge-pill inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white text-gray-800 text-sm font-medium border border-slate-200 shadow-sm hover:border-slate-300">
+          <i class="fa-solid fa-file-excel text-emerald-600 text-base"></i>
+          <span>MS Excel</span>
+        </span>
+        <!-- Canva -->
+        <span class="badge-pill inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white text-gray-800 text-sm font-medium border border-slate-200 shadow-sm hover:border-slate-300">
+          <i class="fa-solid fa-palette text-amber-500 text-base"></i>
+          <span>Canva</span>
+        </span>
+        <!-- Leadership -->
+        <span class="badge-pill inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white text-gray-800 text-sm font-medium border border-slate-200 shadow-sm hover:border-slate-300">
+          <i class="fa-solid fa-chess-king text-amber-600 text-base"></i>
+          <span>Leadership</span>
+        </span>
+        <!-- Responsibility -->
+        <span class="badge-pill inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white text-gray-800 text-sm font-medium border border-slate-200 shadow-sm hover:border-slate-300">
+          <i class="fa-solid fa-clipboard-check text-teal-600 text-base"></i>
+          <span>Responsibility</span>
+        </span>
+        <!-- Time Management -->
+        <span class="badge-pill inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white text-gray-800 text-sm font-medium border border-slate-200 shadow-sm hover:border-slate-300">
+          <i class="fa-regular fa-clock text-sky-600 text-base"></i>
+          <span>Time Management</span>
+        </span>
+        <!-- Teamwork -->
+        <span class="badge-pill inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white text-gray-800 text-sm font-medium border border-slate-200 shadow-sm hover:border-slate-300">
+          <i class="fa-solid fa-handshake text-cyan-600 text-base"></i>
+          <span>Teamwork</span>
+        </span>
+        <!-- Empathy + Sympathy -->
+        <span class="badge-pill inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white text-gray-800 text-sm font-medium border border-slate-200 shadow-sm hover:border-slate-300">
+          <i class="fa-solid fa-hand-holding-heart text-rose-500 text-base"></i>
+          <span>Empathy + Sympathy</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- Grid: Activities & Projects -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Activities -->
+      <section class="glass-card rounded-3xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold text-gray-900">Activities</h2>
+              <p class="text-xs text-gray-500">Aktivitas pembelajaran saat ini</p>
+            </div>
+          </div>
+          
+          <ul class="space-y-3.5">
+            <li class="flex items-start gap-3 bg-lilac-50/60 p-3.5 rounded-2xl border border-lilac-200/50">
+              <span class="mt-1 w-5 h-5 rounded-full bg-lilac-200 text-lilac-700 flex items-center justify-center text-xs shrink-0">
+                <i class="fa-solid fa-code"></i>
+              </span>
+              <div>
+                <span class="text-sm font-semibold text-gray-800 block">Learning the basics of programming</span>
+                <p class="text-xs text-gray-600 mt-0.5">Mempelajari dasar logika algoritma dan sintaks pemrograman.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 bg-lilac-50/60 p-3.5 rounded-2xl border border-lilac-200/50">
+              <span class="mt-1 w-5 h-5 rounded-full bg-lilac-200 text-lilac-700 flex items-center justify-center text-xs shrink-0">
+                <i class="fa-solid fa-gauge-high"></i>
+              </span>
+              <div>
+                <span class="text-sm font-semibold text-gray-800 block">Learning how to calibrate measuring instruments</span>
+                <p class="text-xs text-gray-600 mt-0.5">Mempraktikkan pengoperasian dan kalibrasi alat ukur dasar seperti multimeter.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="glass-card rounded-3xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold text-gray-900">Projects</h2>
+              <p class="text-xs text-gray-500">Karya dan hasil proyek</p>
+            </div>
+          </div>
+
+          <div class="border-2 border-dashed border-lilac-300 bg-lilac-50/50 rounded-2xl p-6 text-center flex flex-col items-center justify-center h-44">
+            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-lilac-600 text-xl mb-3">
+              <i class="fa-solid fa-hourglass-half animate-spin" style="animation-duration: 4s;"></i>
+            </div>
+            <p class="text-base font-semibold text-lilac-900">Ditunggu untuk projeknya :)</p>
+            <span class="text-xs text-lilac-600 mt-1">Coming Soon</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Education Section -->
+    <section class="glass-card rounded-3xl p-7 md:p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900">Education</h2>
+          <p class="text-xs text-gray-500">Riwayat jenjang pendidikan</p>
+        </div>
+      </div>
+
+      <div class="relative border-l-2 border-lilac-300 ml-4 pl-6 space-y-8">
+        
+        <!-- Edu 1 -->
+        <div class="relative group">
+          <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-lilac-500 ring-4 ring-lilac-100"></span>
+          <div class="bg-white/90 p-5 rounded-2xl border border-lilac-200 shadow-sm hover:border-lilac-400 transition">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+              <h3 class="font-bold text-lg text-gray-900">Universitas Gadjah Mada</h3>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-lilac-100 text-lilac-700">2026 – Sekarang</span>
+            </div>
+            <p class="text-sm font-medium text-lilac-700">Mahasiswa Sekolah Vokasi – D4 TRE (Teknologi Rekayasa Elektro)</p>
+          </div>
+        </div>
+
+        <!-- Edu 2 -->
+        <div class="relative group">
+          <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-lilac-300 ring-4 ring-lilac-100"></span>
+          <div class="bg-white/90 p-5 rounded-2xl border border-lilac-200 shadow-sm hover:border-lilac-400 transition">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+              <h3 class="font-bold text-lg text-gray-900">SMA N 1 Sumpiuh</h3>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-100 text-gray-600">2023 – 2026</span>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-600 mt-1">
+              <span class="font-medium text-gray-700">Peminatan:</span> Fisika, Matematika Tingkat Lanjut (Mat TL), Biologi, Bahasa Inggris Tingkat Lanjut (B.Ing TL)
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="glass-card rounded-3xl p-7 md:p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900">Experience</h2>
+          <p class="text-xs text-gray-500">Pengalaman organisasi & kepanitiaan</p>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Exp 1 -->
+        <div class="p-5 rounded-2xl bg-white/90 border border-lilac-200 hover:border-lilac-400 transition shadow-sm">
+          <div class="flex flex-wrap justify-between items-center gap-2 mb-1">
+            <h3 class="font-bold text-base sm:text-lg text-gray-900">Anggota KASTRAD (Kajian Strategis dan Advokasi)</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-lilac-100 text-lilac-700">2026 – Sekarang</span>
+          </div>
+          <p class="text-xs sm:text-sm font-semibold text-lilac-700 mb-2">KMTEDI (Keluarga Mahasiswa Teknik Elektro dan Informatika UGM)</p>
+          <p class="text-sm text-gray-600 leading-relaxed font-light">
+            Mengkaji isu-isu strategis mahasiswa serta memfasilitasi advokasi dan penyaluran aspirasi mahasiswa.
+          </p>
+        </div>
+
+        <!-- Exp 2 -->
+        <div class="p-5 rounded-2xl bg-white/90 border border-lilac-200 hover:border-lilac-400 transition shadow-sm">
+          <div class="flex flex-wrap justify-between items-center gap-2 mb-1">
+            <h3 class="font-bold text-base sm:text-lg text-gray-900">Panitia Kegiatan PTA (Penerimaan Tamu Ambalan)</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-lilac-50 text-gray-600">2025</span>
+          </div>
+          <p class="text-xs sm:text-sm font-semibold text-lilac-700 mb-2">Pramuka KJKR</p>
+          <p class="text-sm text-gray-600 leading-relaxed font-light">
+            Membantu dalam persiapan dan pelaksanaan acara, serta berkoordinasi dengan anggota panitia lainnya selama kegiatan berlangsung.
+          </p>
+        </div>
+
+        <!-- Exp 3 -->
+        <div class="p-5 rounded-2xl bg-white/90 border border-lilac-200 hover:border-lilac-400 transition shadow-sm">
+          <div class="flex flex-wrap justify-between items-center gap-2 mb-1">
+            <h3 class="font-bold text-base sm:text-lg text-gray-900">Anggota Sekretaris</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-lilac-50 text-gray-600">2024 – 2025</span>
+          </div>
+          <p class="text-xs sm:text-sm font-semibold text-lilac-700 mb-2">Pramuka KJKR</p>
+          <p class="text-sm text-gray-600 leading-relaxed font-light">
+            Mengelola surat-surat administratif, membuat surat, dokumen proposal dan laporan pertanggungjawaban (LPJ), serta mengarsipkan surat-surat dan dokumen kegiatan kepramukaan.
+          </p>
+        </div>
+
+        <!-- Exp 4 -->
+        <div class="p-5 rounded-2xl bg-white/90 border border-lilac-200 hover:border-lilac-400 transition shadow-sm">
+          <div class="flex flex-wrap justify-between items-center gap-2 mb-1">
+            <h3 class="font-bold text-base sm:text-lg text-gray-900">Anggota Paduan Suara Kegiatan Api Unggun</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-lilac-50 text-gray-600">2024 – 2025</span>
+          </div>
+          <p class="text-xs sm:text-sm font-semibold text-lilac-700 mb-2">Pramuka KJKR</p>
+          <p class="text-sm text-gray-600 leading-relaxed font-light">
+            Menjadi bagian dari tim paduan suara serta bertugas dalam pengiringan lagu pada kegiatan upacara api unggun.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards / Certificate Section -->
+    <section class="glass-card rounded-3xl p-7 md:p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900">Awards / Certificate</h2>
+          <p class="text-xs text-gray-500">Sertifikasi & pencapaian</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-3.5">
+        
+        <!-- Award 1 -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white/90 rounded-2xl border border-lilac-200 hover:border-lilac-300 transition">
+          <div class="flex items-start sm:items-center gap-3.5">
+            <div class="w-9 h-9 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-certificate text-sm"></i>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-gray-900">TOEFL Test (Institutional / Self-Assessment)</h3>
+              <p class="text-xs text-gray-600 mt-0.5">Score: 390 • International College Purwokerto</p>
+            </div>
+          </div>
+          <span class="inline-flex items-center self-start sm:self-center px-3 py-1 rounded-full text-xs font-semibold bg-lilac-100 text-lilac-700 border border-lilac-200 shrink-0">
+            2026
+          </span>
+        </div>
+
+        <!-- Award 2 -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white/90 rounded-2xl border border-lilac-200 hover:border-lilac-300 transition">
+          <div class="flex items-start sm:items-center gap-3.5">
+            <div class="w-9 h-9 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-medal text-sm"></i>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-gray-900">Peserta Olimpiade Sains Nasional (OSN) Bidang Fisika</h3>
+              <p class="text-xs text-gray-600 mt-0.5">Tingkat Kabupaten</p>
+            </div>
+          </div>
+          <span class="inline-flex items-center self-start sm:self-center px-3 py-1 rounded-full text-xs font-semibold bg-lilac-100 text-lilac-700 border border-lilac-200 shrink-0">
+            2025
+          </span>
+        </div>
+
+        <!-- Award 3 -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white/90 rounded-2xl border border-lilac-200 hover:border-lilac-300 transition">
+          <div class="flex items-start sm:items-center gap-3.5">
+            <div class="w-9 h-9 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-music text-sm"></i>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-gray-900">Paduan Suara Upacara Hari Ulang Tahun Kemerdekaan RI ke-79</h3>
+              <p class="text-xs text-gray-600 mt-0.5">Tingkat Kecamatan</p>
+            </div>
+          </div>
+          <span class="inline-flex items-center self-start sm:self-center px-3 py-1 rounded-full text-xs font-semibold bg-lilac-100 text-lilac-700 border border-lilac-200 shrink-0">
+            2024
+          </span>
+        </div>
+
+        <!-- Award 4 -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white/90 rounded-2xl border border-lilac-200 hover:border-lilac-300 transition">
+          <div class="flex items-start sm:items-center gap-3.5">
+            <div class="w-9 h-9 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-music text-sm"></i>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-gray-900">Paduan Suara Upacara Hari Sumpah Pemuda ke-96</h3>
+              <p class="text-xs text-gray-600 mt-0.5">Tingkat Kecamatan</p>
+            </div>
+          </div>
+          <span class="inline-flex items-center self-start sm:self-center px-3 py-1 rounded-full text-xs font-semibold bg-lilac-100 text-lilac-700 border border-lilac-200 shrink-0">
+            2024
+          </span>
+        </div>
+
+        <!-- Award 5 -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white/90 rounded-2xl border border-lilac-200 hover:border-lilac-300 transition">
+          <div class="flex items-start sm:items-center gap-3.5">
+            <div class="w-9 h-9 rounded-xl bg-lilac-100 text-lilac-700 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-medal text-sm"></i>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-gray-900">Peserta Olimpiade Sains Nasional (OSN) Bidang Fisika</h3>
+              <p class="text-xs text-gray-600 mt-0.5">Tingkat Kabupaten</p>
+            </div>
+          </div>
+          <span class="inline-flex items-center self-start sm:self-center px-3 py-1 rounded-full text-xs font-semibold bg-lilac-100 text-lilac-700 border border-lilac-200 shrink-0">
+            2024
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Connect with me Section -->
+    <section id="connect" class="glass-card rounded-3xl p-7 md:p-8 text-center bg-gradient-to-b from-white to-lilac-50/70 border border-lilac-200">
+      <h2 class="text-2xl font-serif font-bold text-lilac-900 mb-2">Connect with me</h2>
+
+      <div class="flex flex-wrap justify-center gap-3.5">
+        <!-- Instagram -->
+        <a href="https://instagram.com/nathsyrln" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-white border border-lilac-200 text-gray-800 hover:text-pink-600 hover:border-pink-300 hover:shadow-md transition">
+          <i class="fa-brands fa-instagram text-lg text-pink-500"></i>
+          <span class="text-sm font-medium">@nathsyrln</span>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:nathasyaberlianaputri@gmail.com" 
+           class="inline-flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-white border border-lilac-200 text-gray-800 hover:text-lilac-700 hover:border-lilac-400 hover:shadow-md transition">
+          <i class="fa-regular fa-envelope text-lg text-lilac-600"></i>
+          <span class="text-sm font-medium">nathasyaberlianaputri@gmail.com</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/nathsyrln" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-white border border-lilac-200 text-gray-800 hover:text-blue-700 hover:border-blue-300 hover:shadow-md transition">
+          <i class="fa-brands fa-linkedin text-lg text-blue-600"></i>
+          <span class="text-sm font-medium">linkedin.com/in/nathsyrln</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-xs text-lilac-700/80">
+    <p>© 2026 Nathasya Berliana Putri. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
